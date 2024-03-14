@@ -1,0 +1,164 @@
+body { 
+    padding: 2cm;
+}
+
+body *{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+}
+
+.sheet {
+    height: 29.7cm;
+    width: 21cm;
+    box-sizing: content-box;
+}
+
+.raffle {
+    border: #000000 1pt solid;
+    height: 6cm;
+    width: 19cm;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30pt;
+    box-sizing: content-box;
+}
+.raffle .parts {
+    height: 100%;
+    padding: 0.2cm;
+}
+
+.raffle .parts h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.raffle .parts:first-child {
+    border-right: #636363 dotted 1.5pt;
+}
+
+.raffle .participant {
+    width: 7cm;
+    display: block;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.raffle .participant h3 {
+    font-size: 8pt;
+}
+
+.raffle .participant .datas .data {
+    border-bottom: 2px solid #000000;
+    padding-bottom: 14pt;
+    margin-top: 6pt;
+}
+
+.raffle .participant .indentifier {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.raffle .participant .school-logo {
+    width: 1cm;
+}
+
+.raffle .organizer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.raffle .organizer h2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    min-width: calc(100% - 1cm);
+}
+
+.raffle .organizer .school-logo {
+    height: 2cm;
+    grid-column: 1 / 2;
+    grid-row: 1 / span 2;
+}
+
+.raffle .organizer .info {
+    align-items: center;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 0.2cm;
+    padding-bottom: 0.2cm;
+}
+
+.raffle .organizer .info .prizes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.raffle .organizer .info .prizes ul li {
+    font-size: 6pt;
+    font-weight: 600;
+    line-height: 8pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.raffle .organizer .pricing-and-info {
+    height: 1cm;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.2cm;
+    width: 100%;
+    border-top: #000000 solid 2pt;
+    border-bottom: #000000 solid 2pt;
+    box-sizing: content-box;
+}
+
+.raffle .organizer .pricing-and-info .price {
+    padding: 0.2cm 0cm;
+    font-size: 16pt;
+    font-weight: 900;
+
+}
+
+.raffle .organizer .pricing-and-info ul {
+    list-style: initial;
+    list-style-position: inside;
+}
+
+.raffle .organizer .pricing-and-info ul li {
+    box-sizing: content-box1;
+    font-size: 6pt
+}
+
+.raffle .organizer .description {
+    font-size: 7pt;
+}
+
+.raffle .organizer .footer {
+    border: 2pt solid #000000;
+    color: #000000;
+    padding: 0.1cm;
+    display: flex;
+    justify-content: space-between;
+}
+
+.raffle .organizer .footer * {
+    font-size: 6pt;
+
+}
+
+.raffle .organizer .footer .location {
+    flex: 1;
+}
+
+.raffle .organizer .footer .id {
+    font-weight: 7001;
+}

@@ -1,0 +1,1 @@
+const genButton = document.querySelector('#generate');
